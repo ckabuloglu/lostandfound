@@ -67,6 +67,30 @@ h1{
   margin: auto;
 }
 
+.new {
+  width: 400px;
+  height: 230px;
+  background: #edeff1;
+  margin: 0px auto;
+  padding-top: 20px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.add {
+  font-size: 16px;
+  width: 700px;
+  height: 400px;
+  background: #edeff1;
+  margin: 0px auto;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
 .stand:after{
   content: "";
   position: absolute;
@@ -98,6 +122,12 @@ h1{
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+}
+
+#test {
+    width:200px;
+    height:200px;
+    border:2px solid green;
 }
 
 input[type="text"]{

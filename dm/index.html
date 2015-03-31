@@ -1,0 +1,51 @@
+<!DOCTYPE php>
+
+<?
+
+  if (isset($_POST['submit'])){
+    $user = $_POST['user'];
+    $password = $_POST['password'];
+
+    if (strcmp($user, "type1") == True) and (strcmp($password, "newpass") == True) {
+        header("main_no_access.html");
+    } elseif (strcmp($user, "type2") == True) and (strcmp($password, "newpass") == True) {
+        header("main_restricted.html");
+    } else {
+        $error = " <br/> <span style = 'color: #DE2626'> Wrong username or password </span> ";
+    }
+  }
+
+?>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title> Lost And Found </title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/modernizr.js"></script>
+
+</head>
+
+<body>
+
+  <h1>Lost and Found</h1>
+
+    <div class="inner-screen">
+      <div class="form" method="POST">
+        <input type="text" name="user" class="zocial-dribbble" placeholder="Enter your email" />
+        <input type="text" name="password" placeholder="Password" />
+         <input type="submit" name="submit" value="Login" />
+        <a href="forget.html">Lost your password?</a>
+        <? echo $error; ?>
+      </div> 
+    </div> 
+
+<script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+
+</body>
+
+</html>

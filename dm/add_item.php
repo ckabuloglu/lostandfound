@@ -42,9 +42,10 @@
 				</select></td></tr><tr><td></td></tr>
 				<tr> <td>Description:</td> <td><input name="title" cols="50" placeholder="Title" /></td> </tr><tr><td></td></tr>
 				<tr> <td></td> <td><textarea cols="50" rows="4" name="description" placeholder="Description"></textarea></td> </tr><tr><td></td></tr>
-				<tr><td>Upload Image</td><td> <input type="file" name="image" /> </td></tr><tr><td></td></tr>
-			</table>
-			
+				<tr><td>Upload Image: (optional) </td><td> <input type="file" name="image" /> </td></tr><tr><td></td></tr>
+				<tr><td><a href="add_id.php"> Add ID </a> </td></tr>
+			</table></br></br>
+			<input type="submit" id="submit" name="submit" value="Submit" />		
 
         </form>
     </div>
